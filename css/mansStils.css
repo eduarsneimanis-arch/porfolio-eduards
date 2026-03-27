@@ -1,0 +1,55 @@
+
+body {
+    background-image: url('../images/fons.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #111; 
+    color: white; 
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+.w3-navbar {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.w3-navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+.w3-navbar a:hover {
+    background: #333; 
+}
+
+
+section {
+    background: rgba(0, 0, 0, 0.8); 
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #555;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #00d4ff;
+}
