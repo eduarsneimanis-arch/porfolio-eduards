@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Formas uzdevums</title>
+    <link rel="stylesheet" href="css/mansStils.css">
+    <script>
+        function kalkulet(op) {
+            let a = parseFloat(document.getElementById('n1').value);
+            let b = parseFloat(document.getElementById('n2').value);
+            let r = 0;
+            if(op == '+') r = a + b;
+            if(op == '-') r = a - b;
+            if(op == '/') r = a / b;
+            document.getElementById('res').innerText = "Rezultāts: " + r;
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <h2>Kalkulators</h2>
+        <input type="number" id="n1">
+        <input type="number" id="n2"><br><br>
+        <button onclick="kalkulet('+')">+</button>
+        <button onclick="kalkulet('-')">-</button>
+        <button onclick="kalkulet('/')">/</button>
+        <button type="reset" onclick="location.reload()">Reset</button>
+        <h3 id="res">Rezultāts: </h3>
+        <br>
+        <a href="index.html" style="color:white;">Atpakaļ</a>
+    </section>
+</body>
+</html>

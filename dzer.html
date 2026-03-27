@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Dzēriena cena</title>
+    <link rel="stylesheet" href="css/mansStils.css">
+    <script>
+        function raditCenu() {
+            // Cena parādās blakus pogai, ierakstot to span elementā
+            document.getElementById('cenasVieta').innerText = " Cena: 1.50 EUR";
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <h2>Dzēriena pasūtīšana</h2>
+        <p>Spied pogu, lai uzzinātu cenu:</p>
+        
+        <button type="button" onclick="raditCenu()">Rādīt cenu</button>
+        <span id="cenasVieta" style="font-weight:bold; margin-left:10px;"></span>
+
+        <br><br>
+        <a href="index.html" style="color:white;">Atpakaļ uz sākumu</a>
+    </section>
+</body>
+</html>
